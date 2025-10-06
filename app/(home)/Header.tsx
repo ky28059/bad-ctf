@@ -19,7 +19,7 @@ export default async function Header() {
                 className="flex text-5xl md:text-8xl font-bold bg-clip-text mb-4 mt-16 drop-shadow-md"
                 style={comic.style}
             >
-                bad ctf
+                bad ctf !!!!!
             </h1>
             <p
                 className="mb-5 max-w-3xl text-center text-pretty text-sm sm:text-base"

@@ -12,14 +12,14 @@ export default function GridChallenge(props: Challenge & { solved: boolean }) {
     return (
         <>
             <button
-                className="size-40 p-4 flex items-center justify-center"
+                className="relative size-40 p-3 flex items-center justify-center text-lg hover:bg-black/10 transition duration-200"
                 onClick={() => setOpen(true)}
             >
-                <h3 className="font-medium mb-2 flex gap-2 items-center justify-center wrap-anywhere">
-                    {props.solved && (
-                        <BiCheck className="flex-none bg-success/40 p-0.5 mb-0.5 rounded-full" />
-                    )}
-                </h3>
+                {props.solved && (
+                    <span className="absolute inset-0 text-red-600 flex items-center justify-center text-[10rem] pb-4">
+                        ×
+                    </span>
+                )}
                 {props.name}
             </button>
 
