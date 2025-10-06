@@ -5,3 +5,9 @@ export const bingo = [
     ['Challenge retracted after solve', 'Stego', 'Registration closed after CTF started', 'Broken reversing challenge', '"Scoreboard is frozen"'],
     ['Releasing hints after first solve', 'Blind pwn challenge', 'No flag format', 'Flags / chals get leaked', 'CTF infrastructure gets hacked']
 ];
+
+export const bonus = [
+    'Twitter drama after CTF 🔥',
+    '"Cyber league"',
+    'Admins ban over criticism'
+]
