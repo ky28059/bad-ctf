@@ -26,7 +26,7 @@ export default function Timer(props: TimerProps) {
     if (time > ctfEnd) return (
         <div className="mb-6">
             <div
-                className="bg-black/30 mt-1 text-5xl sm:text-6xl font-medium px-5 py-3 rounded font-mono mb-1"
+                className="bg-black/10 mt-1 text-5xl sm:text-6xl font-medium px-5 py-3 rounded font-mono mb-1"
                 style={martian.style}
             >
                 00
@@ -38,7 +38,7 @@ export default function Timer(props: TimerProps) {
                 00
             </div>
             <p className="text-primary text-sm text-center">
-                b01lers CTF is over!
+                bad CTF is over!
             </p>
         </div>
     );
@@ -50,7 +50,7 @@ export default function Timer(props: TimerProps) {
     return (
         <div className="mb-6">
             <div
-                className="bg-black/30 mt-1 text-5xl sm:text-6xl font-medium px-5 py-3 rounded font-mono mb-1"
+                className="bg-black/10 mt-1 text-5xl sm:text-6xl font-medium px-5 py-3 rounded font-mono mb-1"
                 style={martian.style}
             >
                 {!mounted ? '00' : diff.days.toString().padStart(2, '0')}
@@ -63,9 +63,9 @@ export default function Timer(props: TimerProps) {
             </div>
             <p className="text-primary text-sm text-center">
                 {time > ctfStart ? (
-                    'left until b01lers CTF ends.'
+                    'left until bad CTF ends.'
                 ) : (
-                    'days until b01lers CTF.'
+                    'days until bad CTF.'
                 )}
             </p>
         </div>

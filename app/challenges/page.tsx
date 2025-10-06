@@ -3,7 +3,6 @@ import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
 // Components
-import Filters from '@/app/challenges/Filters';
 import Challenges from '@/app/challenges/Challenges';
 import DisplayToggle from '@/app/challenges/DisplayToggle';
 import CTFNotStarted from '@/components/CTFNotStarted';
@@ -51,10 +50,6 @@ export default async function ChallengesPage() {
 
     return (
         <div className="container relative pt-32 pb-14 flex flex-col md:flex-row gap-6">
-            <Filters
-                challenges={challs}
-                solves={profile.data.solves}
-            />
             <Challenges
                 challenges={challs}
                 solves={profile.data.solves}

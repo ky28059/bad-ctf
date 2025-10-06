@@ -4,9 +4,7 @@ import { Inter } from 'next/font/google';
 
 // Components
 import NavBar from '@/app/NavBar';
-import Equalizer from '@/app/Equalizer';
 import Footer from '@/app/Footer';
-import ScrollableBackground from '@/app/ScrollableBackground';
 
 // Providers
 import TimeProvider from '@/components/TimeProvider';
@@ -31,19 +29,16 @@ export default function RootLayout(props: { children: ReactNode }) {
     return (
         <html lang="en" className="h-full overflow-y-scroll scroll-smooth">
             <body
-                className="bg-linear-to-b/srgb from-background from-25% to-theme bg-fixed text-white h-full flex flex-col"
+                className="bg-background text-black h-full flex flex-col"
                 style={inter.style}
             >
                 <TimeProvider>
                     <FilterProvider>
                         <PreferencesProvider>
                             <FlagDispatchProvider>
-                                <ScrollableBackground />
-
                                 <NavBar />
                                 {props.children}
 
-                                <Equalizer />
                                 <Footer />
                             </FlagDispatchProvider>
                         </PreferencesProvider>

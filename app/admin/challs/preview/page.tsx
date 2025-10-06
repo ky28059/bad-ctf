@@ -2,7 +2,6 @@ import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
 // Components
-import Filters from '@/app/challenges/Filters';
 import Challenges from '@/app/challenges/Challenges';
 import DisplayToggle from '@/app/challenges/DisplayToggle';
 import AdminChallengesPreviewAlert from '@/app/admin/challs/preview/AdminChallengesPreviewAlert';
@@ -29,10 +28,6 @@ export default async function AdminChallengesPreview() {
         <div className="container relative pt-32 pb-14 flex flex-col md:flex-row gap-6">
             <AdminChallengesPreviewAlert />
 
-            <Filters
-                challenges={parsed}
-                solves={[]}
-            />
             <Challenges
                 challenges={parsed}
                 solves={[]}

@@ -15,7 +15,7 @@ export default function NavLink(props: NavLinkProps) {
 
     return (
         <Link
-            className={'px-4 py-2 border-b-2 transition duration-200 ' + (active ? 'border-theme-bright text-theme-bright' : 'border-primary text-primary hover:border-white hover:text-white')}
+            className={'px-4 py-2 border-b-2 transition duration-200 ' + (active ? 'border-theme-bright text-theme-bright' : 'border-primary text-primary hover:border-black hover:text-black')}
             href={props.href}
         >
             {props.children}

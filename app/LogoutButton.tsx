@@ -21,14 +21,14 @@ export default function LogoutButton() {
     return (
         <>
             <button
-                className="flex-none px-4 py-2 border-b-2 transition duration-200 border-primary text-primary hover:border-white hover:text-white"
+                className="flex-none px-4 py-2 border-b-2 transition duration-200 border-primary text-primary hover:border-black hover:text-black"
                 onClick={() => setOpen(true)}
             >
                 Log out
             </button>
 
             <CenteredModal
-                className="relative bg-background rounded-lg px-12 py-8 text-white shadow-lg w-full max-w-xl max-h-[90%]"
+                className="relative bg-background rounded-lg px-12 py-8 text-black shadow-lg w-full max-w-xl max-h-[90%]"
                 isOpen={open}
                 setIsOpen={setOpen}
             >
