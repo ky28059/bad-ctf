@@ -20,12 +20,16 @@ export default function Challenges(props: ChallengesProps) {
 
     return (
         <div className="divide-y-[3px] divide-secondary/75 text-center">
-            {bingo.map((row) => (
+            {bingo.map((row, i) => (
                 <div className="flex divide-x-[3px] divide-secondary/75" key={row.join()}>
-                    {row.map((s) => (
-                        <div className="size-40 p-4 flex items-center justify-center" key={s}>
-                            {s}
-                        </div>
+                    {row.map((s, j) => (
+                        <GridChallenge
+                            // TODO: hacky overriding scheme for testing
+                            {...props.challenges[i * 5 + j]}
+                            solved={solved.has(props.challenges[i * 5 + j].name)}
+                            name={s}
+                            key={s}
+                        />
                     ))}
                 </div>
             ))}

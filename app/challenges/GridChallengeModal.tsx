@@ -22,7 +22,7 @@ type GridChallengeModalProps = {
 export default function GridChallengeModal(props: GridChallengeModalProps) {
     return (
         <CenteredModal
-            className="relative bg-background rounded-lg p-10 text-white shadow-lg w-full max-w-xl max-h-[90%]"
+            className="relative bg-background rounded-lg p-10 text-black shadow-lg w-full max-w-xl max-h-[90%]"
             isOpen={props.open}
             setIsOpen={props.setOpen}
         >
@@ -60,7 +60,7 @@ export default function GridChallengeModal(props: GridChallengeModalProps) {
                             {props.challenge.points}
                         </p>
 
-                        <Markdown className="text-sm break-words space-y-2 [&_a]:text-theme-bright [&_a:hover]:underline [&_code]:px-2 [&_code]:py-1 [&_code]:bg-black/40 [&_code]:text-primary [&_code]:rounded mb-6">
+                        <Markdown className="text-sm break-words space-y-2 [&_a]:text-theme-bright [&_a:hover]:underline [&_code]:px-2 [&_code]:py-1 [&_code]:bg-black/10 [&_code]:text-primary [&_code]:rounded mb-6">
                             {props.challenge.description}
                         </Markdown>
 
@@ -93,7 +93,7 @@ export default function GridChallengeModal(props: GridChallengeModalProps) {
 
 function ChallengeTab(props: { children: ReactNode }) {
     return (
-        <Tab className="rounded-t border-b text-primary aria-selected:border-t aria-selected:border-x aria-selected:border-b-transparent aria-selected:text-white transition-[color] duration-200 border-secondary px-4 py-2 focus:outline-none">
+        <Tab className="rounded-t border-b text-primary aria-selected:border-t aria-selected:border-x aria-selected:border-b-transparent aria-selected:text-black transition-[color] duration-200 border-secondary px-4 py-2 focus:outline-none">
             {props.children}
         </Tab>
     )
