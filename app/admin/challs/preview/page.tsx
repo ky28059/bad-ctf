@@ -3,7 +3,6 @@ import { redirect } from 'next/navigation';
 
 // Components
 import Challenges from '@/app/challenges/Challenges';
-import DisplayToggle from '@/app/challenges/DisplayToggle';
 import AdminChallengesPreviewAlert from '@/app/admin/challs/preview/AdminChallengesPreviewAlert';
 
 // Utils
@@ -32,8 +31,6 @@ export default async function AdminChallengesPreview() {
                 challenges={parsed}
                 solves={[]}
             />
-
-            <DisplayToggle />
         </div>
     )
 }

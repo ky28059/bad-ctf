@@ -8,7 +8,6 @@ import Footer from '@/app/Footer';
 
 // Providers
 import TimeProvider from '@/components/TimeProvider';
-import FilterProvider from '@/components/FilterProvider';
 import PreferencesProvider from '@/components/PreferencesProvider';
 import FlagDispatchProvider from '@/components/FlagDispatchProvider';
 
@@ -33,16 +32,14 @@ export default function RootLayout(props: { children: ReactNode }) {
                 style={inter.style}
             >
                 <TimeProvider>
-                    <FilterProvider>
-                        <PreferencesProvider>
-                            <FlagDispatchProvider>
-                                <NavBar />
-                                {props.children}
+                    <PreferencesProvider>
+                        <FlagDispatchProvider>
+                            <NavBar />
+                            {props.children}
 
-                                <Footer />
-                            </FlagDispatchProvider>
-                        </PreferencesProvider>
-                    </FilterProvider>
+                            <Footer />
+                        </FlagDispatchProvider>
+                    </PreferencesProvider>
                 </TimeProvider>
             </body>
         </html>
