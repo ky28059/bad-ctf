@@ -25,7 +25,7 @@ export default function Scoreboard(props: ScoreboardProps) {
 
             <div className="table w-full">
                 <div className="table-header-group">
-                    <div className="table-row text-black font-semibold bg-zinc-100">
+                    <div className="table-row text-black font-semibold bg-neutral-100">
                         <div className="table-cell py-1.5 px-2">
                             Worldwide position
                         </div>

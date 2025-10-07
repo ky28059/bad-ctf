@@ -10,13 +10,13 @@ type ScoreboardEntryExtraProps = {
 }
 export default function ScoreboardEntry(props: LeaderboardEntry & ScoreboardEntryExtraProps) {
     return (
-        <div className={'table-row group' + (props.index % 2 === 1 ? ' bg-zinc-100' : '')}>
-            <div className={'table-cell w-40 text-right py-1.5 pr-32 border-t border-tertiary transition duration-100 ' + (props.selected ? 'bg-white/10' : 'group-hover:bg-white/10')}>
+        <div className={'table-row group' + (props.index % 2 === 1 ? ' bg-neutral-100' : '')}>
+            <div className={'table-cell w-64 text-right py-1.5 pr-56 border-t border-tertiary transition duration-100 ' + (props.selected ? 'bg-white/10' : 'group-hover:bg-white/10')}>
                 {props.rank}
             </div>
 
             <Link
-                className={'table-cell text-[#0088cc] hover:text-white transition duration-100 py-1.5 pr-8 w-36 border-t border-tertiary ' + (props.selected ? 'bg-white/10' : 'group-hover:bg-white/10')}
+                className={'table-cell text-[#0088cc] hover:text-[#005580] hover:underline transition duration-100 py-1.5 pr-8 w-80 border-t border-tertiary ' + (props.selected ? 'bg-white/10' : 'group-hover:bg-white/10')}
                 href={`/profile/${props.id}`}
             >
                 {props.name}
