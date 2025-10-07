@@ -15,6 +15,10 @@ export default async function NavBar() {
 
     return (
         <NavWrapper>
+            <img
+                src="/assets/logo.png"
+                className="max-h-14 -ml-[200px]"
+            />
             <NavLink href="/">Home</NavLink>
             <NavLink href="/scoreboard">Scoreboard</NavLink>
 

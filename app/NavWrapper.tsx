@@ -5,10 +5,10 @@ import { useScroll } from '@/hooks/useScroll';
 
 
 export default function NavWrapper(props: { children: ReactNode }) {
-    const scroll = useScroll();
+    // const scroll = useScroll();
 
     return (
-        <nav className={'flex justify-center pt-3 pb-2 fixed w-full overflow-x-auto top-0 transition duration-200 z-20' + (scroll > 0 ? ' bg-black/10 backdrop-blur-md' : '')}>
+        <nav className="flex justify-center fixed w-full overflow-x-auto top-0 transition duration-200 z-20 bg-black">
             {props.children}
         </nav>
     )

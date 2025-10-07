@@ -12,7 +12,7 @@ export default function GridChallenge(props: Challenge & { solved: boolean }) {
     return (
         <>
             <button
-                className="relative size-40 p-3 flex items-center justify-center text-lg hover:bg-black/10 transition duration-200"
+                className="relative size-36 p-2 flex items-center justify-center hover:bg-black/10 transition duration-200"
                 onClick={() => setOpen(true)}
             >
                 {props.solved && (
