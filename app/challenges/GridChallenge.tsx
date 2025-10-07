@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import type { Challenge } from '@/util/challenges';
 import GridChallengeModal from '@/app/challenges/GridChallengeModal';
-import { BiCheck } from 'react-icons/bi';
 
 
 export default function GridChallenge(props: Challenge & { solved: boolean }) {
@@ -20,7 +19,12 @@ export default function GridChallenge(props: Challenge & { solved: boolean }) {
                         ×
                     </span>
                 )}
-                {props.name}
+                {props.name === 'free' ? (
+                    <div>
+                        <strong className="text-xl">FREE</strong>
+                        <p>Waste of time</p>
+                    </div>
+                ) : props.name}
             </button>
 
             <GridChallengeModal

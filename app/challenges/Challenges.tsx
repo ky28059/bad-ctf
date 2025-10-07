@@ -20,9 +20,9 @@ export default function Challenges(props: ChallengesProps) {
 
     return (
         <div className="flex gap-12">
-            <div className="divide-y-[3px] divide-secondary/75 text-center">
+            <div className="divide-y-2 divide-secondary/75 text-center">
                 {bingo.map((row, i) => (
-                    <div className="flex divide-x-[3px] divide-secondary/75" key={row.join()}>
+                    <div className="flex divide-x-2 divide-secondary/75" key={row.join()}>
                         {row.map((s, j) => (
                             <GridChallenge
                                 // TODO: hacky overriding scheme for testing
