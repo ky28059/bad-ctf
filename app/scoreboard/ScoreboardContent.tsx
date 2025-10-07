@@ -63,14 +63,16 @@ export default function ScoreboardContent(props: ScoreboardContentProps) {
 
     return (
         <>
-            <ScoreboardGraph graph={graph} />
+            {/* <ScoreboardGraph graph={graph} /> */}
 
             <div className="flex flex-col lg:flex-row gap-4">
+                {/*
                 <ScoreboardFilters
                     division={division}
                     setDivision={updateDivision}
                     config={props.config}
                 />
+                */}
                 <Scoreboard
                     {...scoreboard}
                     name={props.name}
